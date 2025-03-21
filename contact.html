@@ -168,7 +168,24 @@
 		</footer>
 	</div>
 	<a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
+	    <script type="text/javascript">
+			
+	        function sendEmail() {
+	            Email.send({
+	                Host: "smtp.gmail.com",
+	                Username: "dijabetbrcko@gmail.com",
+	                Password: "zpys byvu kshh htwd",
+	                To: 'udruzenjedijabeticarabrcko@hotmail.com',
+	                From: "dijabetbrcko@gmail.com":,
+	                Subject: "Novi upit",
+	                Body: document.getElementById("message").value,
+	            })
+	                .then(function (message) {
+	                    alert("mail sent successfully")
+	                });
+        }
 	<!-- javascript
+	
     ================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->
 	<script src="js/jquery.js"></script>
